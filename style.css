@@ -1,0 +1,197 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hind Madurai", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* CABEÇALHO */
+
+.header {
+    background-color: #4c74af;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+    float: right;
+    padding-top: 7px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #4c74af;
+    border-radius: 5px;
+}
+
+/* SEÇÃO PRINCIPAL */
+
+.hero {
+    background: url(img/vecteezy_people-working-in-the-office-close-up_2978359.jpg) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    height: 600px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-title{
+    font-size: 48px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-description{
+    font-size: 20px;
+    margin: 20px 0;
+    z-index: 1;
+    position: relative;
+}
+
+/* CARACTERISTICAS */
+
+.features{
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #4c74af;
+}
+
+.features-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature{
+    background-color: #a2b6d3ad;
+    border: 2px solid #4c74af;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.feature-title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-description{
+    font-size: 16px;
+    color: #666;
+}
+
+/* Sobre nos */
+
+.about{
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-description{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* RODAPE */
+
+.footer{
+    background-color: #4c74af;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-text{
+    font-size: 16px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px){
+    .features-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature{
+        width: 80%;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link{
+        padding: 10px;
+    }
+
+    .hero-title{
+        font-size: 32px;
+    }
+
+    .hero-description{
+        font-size: 18px;
+    }
+}
